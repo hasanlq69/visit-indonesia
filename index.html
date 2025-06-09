@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>VisitIndonesia</title>
+		<link
+			href="./output.css"
+			rel="stylesheet" />
+		<style>
+			/* Adding vendor prefixes for better Safari compatibility */
+			.w-10.h-10.text-white.rounded-full.flex.items-center.justify-center.transform.hover\:scale-110.hover\:bg-red-500.transition-all.duration-500 {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: all 0.5s;
+				transition: all 0.5s;
+			}
+			.w-10.h-10.text-white.rounded-full.flex.items-center.justify-center.transform.hover\:scale-110.hover\:bg-red-500.transition-all.duration-500:hover {
+				-webkit-transform: scale(1.1);
+				transform: scale(1.1);
+				background-color: #ef4444;
+			}
+		</style>
+	</head>
+	<body>
+		<section
+			class="min-h-screen bg-[url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover px-4 lg:px-20 flex flex-col">
+			<header class="">
+				<div class="p-6 flex items-center justify-between">
+					<!-- icon -->
+					<h1
+						class="text-4xl text-white font-bold hover:scale-110 transition duration-500">
+						Visit<span class="text-red-600">Indonesia</span>
+					</h1>
+					<nav
+						id="navbar"
+						class="hidden lg:flex text-sm uppercase font-semibold">
+						<ul class=" flex space-x-6">
+							<li>
+								<a
+									class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+									href="#about">
+									About
+								</a>
+							</li>
+							<li>
+								<a
+									class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+									href="#about">
+									Careers
+								</a>
+							</li>
+							<li>
+								<a
+									class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+									href="#about">
+									Events
+								</a>
+							</li>
+							<li>
+								<a
+									class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+									href="#about">
+									Products
+								</a>
+							</li>
+							<li>
+								<a
+									class="inline-block font-bold text-main-header text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+									href="#about">
+									Supports
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<button
+						id="menu-toggle"
+						class="lg:hidden relative z-20 w-6 h-6 flex flex-col items-center justify-center gap-1.5">
+						<span
+							class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500"
+							id="line1"></span>
+						<span
+							class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500"
+							id="line2"></span>
+						<span
+							class="w-full h-0.5 bg-main-header origin-center transform transition-transform duration-500"
+							id="line3"></span>
+					</button>
+				</div>
+				<div
+					id="mobile-menu"
+					class="fixed inset-0 bg-black/90 py-12 z-10 hidden">
+					<ul class="p-8 w-full space-y-6 text-center">
+						<li>
+							<a
+								class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+								href="#about">
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+								href="#about">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a
+								class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+								href="#about">
+								Events
+							</a>
+						</li>
+						<li>
+							<a
+								class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+								href="#about">
+								Products
+							</a>
+						</li>
+						<li>
+							<a
+								class="inline-block font-bold text-white text-lg hover:scale-125 hover:text-red-500 transition duration-500"
+								href="#about">
+								Supports
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="flex-1 flex items-center justify-center text-white">
+				<div
+					class="flex flex-col items-center bg-black/50 rounded-2xl p-8 md:p-20 justify-center text-center">
+					<h2 class="text-2xl md:text-4xl font-bold">
+						Jelajahi Keindahan <span class="text-red-500">Indonesia</span>
+					</h2>
+					<p class="max-w-lg mx-auto mt-3 text-xs md:text-sm">
+						Temukan surga tropis dengan pantai eksotis, budaya yang kaya,
+						kuliner lezat. Dari Bali hingga Raja Ampat, Indonesia menawarkan
+						petualangan tak terlupakan
+					</p>
+					<button
+						class="uppercase mt-5 bg-red-500 px-6 py-2 rounded-md hover:bg-red-600">
+						Jelajahi Sekarang
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="group flex gap-0">
+				<button
+					class="z-100 w-24 h-12 -rotate-90 fixed -right-4 top-1/2 text-white -translate-y-1/2 bg-red-600 font-semibold rounded-t-lg group-hover:-translate-x-[384px] transition-transform duration-700">
+					Open Form
+				</button>
+				<div
+					class="z-100 w-96 bg-black/50 text-white p-6 rounded-lg fixed top-1/2 right-0 -translate-y-1/2 translate-x-full group-hover:translate-x-0 transition-transform duration-700">
+					<h2 class="text-lg font-bold mb-2">
+						TRY US <span class="text-red-600">LIKE HOLIDAY IN HEAVEN</span>
+					</h2>
+					<p class="text-sm text-gray-300 mb-4">
+						Get an exclusive tour experience
+					</p>
+
+					<form>
+						<label class="block text-xs font-semibold mb-2">FIRST NAME</label>
+						<input
+							type="text"
+							class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3"
+							placeholder="Enter First Name" />
+
+						<label class="block text-xs font-semibold mb-2">LAST NAME</label>
+						<input
+							type="text"
+							class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3"
+							placeholder="Enter Last Name" />
+
+						<label class="block text-xs font-semibold mb-2"
+							>EMAIL ADDRESS</label
+						>
+						<input
+							type="email"
+							class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3"
+							placeholder="example@gmail.com" />
+
+						<label class="block text-xs font-semibold mb-2">PHONE NUMBER</label>
+						<input
+							type="tel"
+							class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3"
+							placeholder="+62 85319008722" />
+
+						<label class="block text-xs font-semibold mb-2">COUNTRY</label>
+						<select
+							type="text"
+							class="w-full bg-transparent border border-gray-600 rounded px-3 py-2 mb-3"
+							placeholder="Enter First Name">
+							<option value="">Please Select</option>
+						</select>
+						<button
+							class="w-full bg-red-600 font-bold py-2 rounded mt-3 hover:opacity-80 transition-opacity duration-500">
+							SUBMIT
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-white min-h-screen px-4 lg:px-20 flex items-center">
+			<div
+				class="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+				<!-- image -->
+				<div class="rounded-lg overflow-hidden shadow-lg md:w-1/2">
+					<img
+						src="https://images.unsplash.com/photo-1609911569317-5c23cf405f7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGluZG9uZXNpYSUyMGJhbGklMjBpbiUyMHJlZHxlbnwwfHwwfHx8MA%3D%3D"
+						alt=""
+						class="w-full" />
+				</div>
+
+				<!-- Konten -->
+				<div class="text-center md:text-left md:w-1/2">
+					<h2
+						class="text-2xl md:text-4xl font-extrabold uppercase leading-tight border-b-red-500 border-b-3">
+						Explore the Wonders of Indonesia
+					</h2>
+					<p class="text-gray-700 text-xs md:text-lg mt-4">
+						Indonesia adalah rumah bagi berbagai destinasi wisata yang cocok
+						untuk segala jenis pelancong – baik yang mencari petualangan,
+						relaksasi, hingga pengalaman budaya yang mendalam. Dari Bali yang
+						terkenal dengan pantainya yang indah, Yogyakarta dengan keanggunan
+						budaya Jawa, hingga Raja Ampat yang menyimpan surga bawah laut yang
+						tak tertandingi.
+					</p>
+					<p class="text-gray-700 text-xs md:text-lg mt-2">
+						Indonesia adalah tempat yang kaya akan budaya dan tradisi yang
+						beragam. Dari tarian, musik, kuliner, hingga upacara adat, setiap
+						daerah di Indonesia memiliki cerita dan kekayaan budaya yang unik.
+						Visit Indonesia ingin mengajak Anda untuk lebih dekat dengan
+						kehidupan lokal dan menghargai keberagaman yang ada.
+					</p>
+					<p class="text-gray-700 text-xs md:text-lg mt-2">
+						Kami mengundang Anda untuk menjelajahi Indonesia melalui situs kami,
+						menemukan tujuan impian Anda, dan merasakan keajaiban yang
+						ditawarkan oleh tanah air ini. Indonesia menunggu untuk Anda temui,
+						jelajahi, dan cintai.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="px-4 lg:px-20 space-y-8 pb-8">
+            <h1 class="text-2xl md:text-4xl font-extrabold uppercase leading-tight">Favorite Destination</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--Card 1-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5kb25lc2lhJTIwc2VhfGVufDB8fDB8fHww" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Raja Ampat</p>
+                        <p class="text-md mb-4 text-center p-2">Raja Ampat adalah gugusan kepulauan di Provinsi Papua Barat Daya, Indonesia. Kepulauan ini terkenal sebagai surga bagi para penyelam dan pecinta petualangan.</p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://plus.unsplash.com/premium_photo-1663954865003-43333b9d5925?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kb25lc2lhJTIwc2VhfGVufDB8fDB8fHww" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Pulau Bali</p>
+                        <p class="text-md mb-4 text-center p-2">Pulau Bali adalah sebuah provinsi di Indonesia yang terkenal dengan keindahan pantainya, budaya, dan seni. Pulau ini juga dikenal sebagai Pulau Dewata atau Pura Seribu</p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1736481637456-15905fc543f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Pantai Pink</p>
+                        <p class="text-md mb-4 text-center p-2">Pink Beach atau Pantai Pink adalah pantai yang memiliki pasir berwarna merah muda. Pantai ini terletak di Pulau Komodo, Labuan Bajo, Nusa Tenggara Timur.</p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://plus.unsplash.com/premium_photo-1668883189361-9c754861dbd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVsYXUlMjBrb21vZG98ZW58MHx8MHx8fDA%3D" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Nusa Penida</p>
+                        <p class="text-md mb-4 text-center p-2">Nusa Penida adalah sebuah pulau kecil di Kabupaten Klungkung, Bali, Indonesia. Pulau ini merupakan bagian dari gugus kepulauan Nusa Lembongan-Nusa Ceningan-Nusa Penida. </p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!--Card 5-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1607427225127-a4ae1d4b050c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Pulau Padar</p>
+                        <p class="text-md mb-4 text-center p-2">Pulau Padar adalah pulau terbesar ketiga di Taman Nasional Komodo, Nusa Tenggara Timur (NTT). Pulau ini merupakan destinasi wisata yang populer bagi pencinta alam dan petualang</p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <!--Card 6-->
+                <div class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1717238978594-f0a29054308f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHB1bGF1JTIwa29tb2RvfGVufDB8fDB8fHww" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-trasform duration-500 text-white">
+                        <p class=" text-lg font-bold mb-4">Pulau Komodo</p>
+                        <p class="text-md mb-4 text-center p-2">Pulau Komodo adalah pulau yang terletak di Kepulauan Nusa Tenggara, Indonesia. Pulau ini merupakan salah satu pulau utama di Taman Nasional Komodo.</p>
+                        <button class="w-10 h-10 text-white rounded-full flex items-center justify-center transform hover:scale-110 hover:bg-red-500 transition-all duration-500 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 448 512"><path fill="#ffffff" d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8l176 0 0 176c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white px-4 lg:px-20 flex flex-col lg:flex-row gap-4 items-center justify-center min-h-screen">
+            <div class="text-center lg:text-left flex flex-col w-full lg:w-1/3 items-center lg:items-start">
+                <h2 class="text-2xl md:text-2xl font-extrabold uppercase leading-tight">Pilih Paket Anda dan Nikmati Pengalaman yang Tak Terlupakan!</h2>
+                <p class="text-sm md:text-lg mt-4 text-gray-400">Mulai dari yang paling hemat hingga yang paling premium, kami punya sesuatu untuk semua orang. Pilih paket yang sesuai dengan kebutuhan Anda dan rasakan perbedaannya!</p>
+                <button class="mt-4 py-2 px-5 w-auto bg-red-600 text-white font-semibold text-sm md:text-lg rounded-lg hover:opacity-70 duration-300 delay-150">Join Us Now</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!--Pricing card 1-->
+                <div class="bg-white text-black py-8 px-16 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 min-h-[24rem] flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold">Budget</h2>
+                        <p class="text-5xl font-bold mt-2">3 Days</p>
+                        <p class="text-gray-400 mt-2">$299/Person</p>
+                    </div>
+                    <div>
+                        <button class="mt-4 px-6 py-2 border border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition duration-300">Book Now</button>
+                        <div class="mt-6 text-gray-400 text-sm">
+                            <p>&#10003; Economy hotel stay</p>
+                            <p>&#10003; Guided city tour</p>
+                            <p>&#10003; Free breakfast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Pricing card 2-->
+                <div class="bg-white text-black py-8 px-16 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 min-h-[24rem] flex flex-col justify-between">
+                    <h2 class="text-xl font-semibold">Standart</h2>
+                    <p class="text-5xl font-bold mt-2">5 Days</p>
+                    <p class="text-gray-400 mt-2">$599/Person</p>
+                    <button class="mt-4 px-6 py-2 border border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition duration-300">Book Now</button>
+                    <div class="mt-6 text-gray-400 text-sm">
+                        <p>&#10003; 4-star hotel stay</p>
+                        <p>&#10003; Guided city and adventure tour</p>
+                        <p>&#10003; Breakfast & dinner included</p>
+                    </div>
+                </div>
+                <!--Pricing card 3-->
+                <div class="bg-white text-black py-8 px-16 rounded-lg shadow-lg shadow-red-300 w-full text-center border border-red-700 group hover:border-red-500 hover:scale-110 transition-all duration-500 min-h-[24rem] flex flex-col justify-between">
+                    <h2 class="text-xl font-semibold">Luxury</h2>
+                    <p class="text-5xl font-bold mt-2">7 Days</p>
+                    <p class="text-gray-400 mt-2">$999/Person</p>
+                    <button class="mt-4 px-6 py-2 border border-red-400 text-red-400 rounded-lg group-hover:bg-red-600 hover:opacity-60 group-hover:text-white transition duration-300">Book Now</button>
+                    <div class="mt-6 text-gray-400 text-sm">
+                        <p>&#10003; 5-star hotel stay</p>
+                        <p>&#10003; Private guided tours</p>
+                        <p>&#10003; All meals included</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="flex items-center justify-center py-8 overflow-hidden  w-full">
+            <div class="relative min-w-[2500px] h-56 overflow-hidden shadow-lg">
+
+                <!-- main content subscription -->
+                <div class="text-white h-56 text-center flex flex-col items-center justify-center w-full absolute top-0 bottom-0 z-10">
+                    <p class="text-sm uppercase tracking-wide font-black">35,000+ Already Joined</p>
+                    <h2 class="text-xl md:text-3xl">Stay up-to-date with what we're doing</h2>
+                    <div class="mt-6 flex flex-col items-center md:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email address" class="px-4 py-2 w-72 text-white rounded-sm focus:outline-none border">
+                        <button class="bg-red-500 px-6 py-3 text-white font-semibold rounded-md hover:opacity-75 transition-opacity cursor-pointer w-32 text-center">Subscribe</button>
+                    </div>
+                </div>
+
+                <!-- image translate animation -->
+                <div class="flex w-[200%] animate-translate">
+                    <div class="flex">
+                        <img src="https://plus.unsplash.com/premium_photo-1682091942392-bc2842010e75?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kb25lc2lhJTIwd2lzYXRhfGVufDB8fDB8fHww" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://images.unsplash.com/photo-1671080749770-791e382d681c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kb25lc2lhJTIwd2lzYXRhfGVufDB8MHwwfHx8MA%3D%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://plus.unsplash.com/premium_photo-1661874304749-56dcd4f33f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGluZG9uZXNpYSUyMHdpc2F0YSUyMHBpbmslMjBiZWFjaHxlbnwwfDB8MHx8fDA%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW5kb25lc2lhfGVufDB8MHwwfHx8MA%3D%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://media.istockphoto.com/id/2162377685/photo/back-to-school.webp?a=1&b=1&s=612x612&w=0&k=20&c=ctCrsZfoLDfMvaoLHr4nKv64a7PUfYdVNtITqor1raY=" alt="image1" class="object-cover object-center w-[500px] h-full">
+                    </div>
+                    <div class="flex">
+                        <img src="https://plus.unsplash.com/premium_photo-1682091942392-bc2842010e75?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kb25lc2lhJTIwd2lzYXRhfGVufDB8fDB8fHww" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://images.unsplash.com/photo-1671080749770-791e382d681c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kb25lc2lhJTIwd2lzYXRhfGVufDB8MHwwfHx8MA%3D%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://plus.unsplash.com/premium_photo-1661874304749-56dcd4f33f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGluZG9uZXNpYSUyMHdpc2F0YSUyMHBpbmslMjBiZWFjaHxlbnwwfDB8MHx8fDA%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW5kb25lc2lhfGVufDB8MHwwfHx8MA%3D%3D" alt="image1" class="object-cover object-center w-[500px] h-full">
+                        <img src="https://media.istockphoto.com/id/2162377685/photo/back-to-school.webp?a=1&b=1&s=612x612&w=0&k=20&c=ctCrsZfoLDfMvaoLHr4nKv64a7PUfYdVNtITqor1raY=" alt="image1" class="object-cover object-center w-[500px] h-full">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 lg:px-20 flex flex-col items-center">
+            <h2 class="text-xl md:text-3xl m-4 text-black font-bold border-red-600 border-b-4 px-4 py-2 hover:bg-red-500 rounded-lg transition duration-500 select-none hover:text-white shadow-xl">Testimonials</h2>
+
+            <div class="my-5 grid gap-6 grid-cols-1 lg:grid-cols-5">
+
+                <!-- Card 1 -->
+                <div class="bg-red-500 text-white lg:col-span-3 p-6 rounded-lg hover:scale-105 hover:shadow-xl transition duration-500 relative">
+                    <!-- user -->
+                    <div class="flex flex-row gap-2">
+                        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="user1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Daniel Clifford</h3>
+                            <p class="text-sm opacity-75">Visited: July 2024 - Bali</p>
+                        </div>
+                    </div>
+
+                    <svg class="w-20 absolute top-2 right-2 opacity-30" fill="#ffffff" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>quotes</title><path d="M12,15H6.11A9,9,0,0,1,10,8.86l1.79-1.2L10.69,6,8.9,7.2A11,11,0,0,0,4,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,12,15Z"></path><path d="M26,15H20.11A9,9,0,0,1,24,8.86l1.79-1.2L24.7,6,22.9,7.2A11,11,0,0,0,18,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,26,15Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+
+
+                    <!-- testimonial -->
+                    <div>
+                        <!-- title -->
+                        <h4 class="mt-4 font-semibold">The lush panorama of Ubud is located in the central part of Bali Island.</h4>
+                        <!-- description -->
+                         <p class="mt-2 text-sm opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, cupiditate! Perspiciatis dolor facilis earum vitae dolores veritatis voluptas enim laudantium voluptate iste aliquid provident facere excepturi nulla quidem qui amet consequuntur vel tempore, dolore rem dolorem officia sit eaque. Laudantium veritatis id in eveniet enim. Asperiores molestias est molestiae sed delectus, perferendis voluptatum fugiat porro ullam tempora suscipit fuga aspernatur non. Nihil vel beatae quo placeat quae nulla tempore rem modi molestiae quod, enim sit pariatur quis ipsam. Mollitia cum provident, obcaecati maxime molestias quis, dolores rerum illo nisi commodi quia perferendis delectus laboriosam dolorum officiis porro quaerat facere minima voluptate. Natus nemo distinctio quasi ut culpa tempora accusamus eum a in odit aliquid molestiae, sunt voluptatibus similique aliquam. Iste minus quia omnis, enim quis minima quibusdam, consequatur voluptatibus unde rem alias incidunt! Cum consequatur voluptate, ipsam rerum dolorem assumenda velit hic mollitia. Temporibus minus vel tempore quisquam velit sit?</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-yellow-800 text-white  p-6 rounded-lg hover:scale-105 hover:shadow-xl transition duration-500 relative">
+
+                    <svg class="w-20 absolute top-2 right-2 opacity-30" fill="#ffffff" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>quotes</title><path d="M12,15H6.11A9,9,0,0,1,10,8.86l1.79-1.2L10.69,6,8.9,7.2A11,11,0,0,0,4,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,12,15Z"></path><path d="M26,15H20.11A9,9,0,0,1,24,8.86l1.79-1.2L24.7,6,22.9,7.2A11,11,0,0,0,18,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,26,15Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+
+                    <!-- user -->
+                    <div class="flex flex-row  gap-2">
+                        <img src="https://randomuser.me/api/portraits/men/53.jpg" alt="user2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Jonathan Walters</h3>
+                            <p class="text-sm opacity-75">Visited: December 2024 - Ubud Bali</p>
+                        </div>
+                    </div>
+                    <!-- testimonial -->
+                    <div>
+                        <!-- title -->
+                        <h4 class="mt-4 font-semibold">I love bali !!</h4>
+                        <!-- description -->
+                         <p class="mt-2 text-sm opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit atque non aperiam magni distinctio delectus, laudantium temporibus veniam. Enim itaque harum architecto iusto illo perferendis accusantium aliquid quidem iure!</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-green-600 text-white  p-6 rounded-lg hover:scale-105 hover:shadow-xl transition duration-500 relative lg:row-span-2">
+
+                    <svg class="w-20 absolute top-2 right-2 opacity-30" fill="#ffffff" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>quotes</title><path d="M12,15H6.11A9,9,0,0,1,10,8.86l1.79-1.2L10.69,6,8.9,7.2A11,11,0,0,0,4,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,12,15Z"></path><path d="M26,15H20.11A9,9,0,0,1,24,8.86l1.79-1.2L24.7,6,22.9,7.2A11,11,0,0,0,18,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,26,15Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+
+                    <!-- user -->
+                    <div class="flex flex-row  gap-2">
+                        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="user3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Kiran Whittle</h3>
+                            <p class="text-sm opacity-75">Visited: December 2024 - Jakarta</p>
+                        </div>
+                    </div>
+                    <!-- testimonial -->
+                    <div>
+                        <!-- title -->
+                        <h4 class="mt-4 font-semibold">Jakarta is a huge, sprawling metropolis</h4>
+                        <!-- description -->
+                         <p class="mt-2 text-sm opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus cupiditate, unde fuga illo non molestias eaque? Natus fugiat deserunt sapiente nostrum aspernatur impedit doloribus harum odio nisi voluptatum quisquam maiores, possimus aliquid dolor assumenda pariatur? Laboriosam labore, fugit nam, sunt perferendis minus maiores sequi rem aliquid sit numquam recusandae animi ducimus aut dignissimos reprehenderit aperiam. Temporibus assumenda repellendus odio possimus adipisci vel eius eveniet facilis iure maiores, ducimus, ab dolore perferendis cumque saepe voluptatem neque perspiciatis aperiam? Laboriosam tenetur a nobis vero beatae! Sapiente ratione nihil autem fugit dolor tempore repellendus accusantium dicta dignissimos, delectus amet voluptas quisquam pariatur?</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover:scale-105 hover:shadow-xl transition duration-500 relative ">
+
+                    <svg class="w-20 absolute top-2 right-2 opacity-30" fill="#000000" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>quotes</title><path d="M12,15H6.11A9,9,0,0,1,10,8.86l1.79-1.2L10.69,6,8.9,7.2A11,11,0,0,0,4,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,12,15Z"></path><path d="M26,15H20.11A9,9,0,0,1,24,8.86l1.79-1.2L24.7,6,22.9,7.2A11,11,0,0,0,18,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,26,15Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+
+                    <!-- user -->
+                    <div class="flex flex-row  gap-2">
+                        <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="user3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg">John Marmon</h3>
+                            <p class="text-sm opacity-75">Visited: June 2022 - Bali</p>
+                        </div>
+                    </div>
+                    <!-- testimonial -->
+                    <div>
+                        <!-- title -->
+                        <h4 class="mt-4 font-semibold">Bandung features a large collection of Dutch Colonial architecture</h4>
+                        <!-- description -->
+                         <p class="mt-2 text-sm opacity-90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem maiores at, assumenda perspiciatis sint possimus placeat voluptas, modi ducimus est quod quaerat! Distinctio magnam dolores exercitationem provident ad fugit?</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-blue-700 text-white p-6 rounded-lg hover:scale-105 hover:shadow-xl transition duration-500 relative lg:col-span-3">
+
+                    <svg class="w-20 absolute top-2 right-2 opacity-30" fill="#ffffff" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;}</style></defs><title>quotes</title><path d="M12,15H6.11A9,9,0,0,1,10,8.86l1.79-1.2L10.69,6,8.9,7.2A11,11,0,0,0,4,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,12,15Z"></path><path d="M26,15H20.11A9,9,0,0,1,24,8.86l1.79-1.2L24.7,6,22.9,7.2A11,11,0,0,0,18,16.35V23a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2V17A2,2,0,0,0,26,15Z"></path><rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect></g></svg>
+
+                    <!-- user -->
+                    <div class="flex flex-row  gap-2">
+                        <img src="https://randomuser.me/api/portraits/men/57.jpg" alt="user3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Patrick Abrahams</h3>
+                            <p class="text-sm opacity-75">Visited: July 2022 - Lombok</p>
+                        </div>
+                    </div>
+                    <!-- testimonial -->
+                    <div>
+                        <!-- title -->
+                        <h4 class="mt-4 font-semibold">Bandung features a large collection of Dutch Colonial architecture</h4>
+                        <!-- description -->
+                         <p class="mt-2 text-sm opacity-90">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit repellat vel inventore et libero quisquam, minus a quod distinctio vero eum rem aperiam possimus quae nobis similique explicabo sequi facere ut aliquam numquam doloribus consectetur praesentium. Numquam sed magnam quidem alias nemo error sint nulla voluptas deserunt quibusdam excepturi veniam modi mollitia quas facere accusantium placeat, pariatur soluta quis magni laborum dolor! Ipsam, hic quam eveniet explicabo alias delectus labore blanditiis culpa expedita ut quos maiores at iure eos odio velit? Aliquid sapiente accusantium dignissimos quia est ea fugit ut, in necessitatibus optio omnis. Reprehenderit voluptate fugiat eum ipsum, cupiditate deleniti incidunt eius? Aperiam porro vero debitis sequi dolore magni nisi fugit alias ut commodi nesciunt unde doloribus molestias eveniet ab, expedita iure ex. Harum non tempora nisi ipsa amet numquam consequatur veniam fugiat sint. Molestiae impedit, a voluptatem beatae qui dolore, illo totam quis cum, iusto ab molestias possimus enim suscipit quos quo veniam in recusandae accusantium laboriosam veritatis fuga. Incidunt alias exercitationem voluptatem pariatur, nihil numquam quaerat cum repellendus magnam libero, cupiditate doloremque nobis delectus beatae id eius.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="text-white flex flex-col md:flex-row justify-between items-center p-6 md:py-10 md:px-20 bg-black" >
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold">Visit<span class="text-red-500">Indonesia</span></h1>
+                <nav class="mt-2 md:mt-4">
+                    <ul class="flex flex-col md:flex-row gap-0 md:gap-2 text-gray-300">
+                        <li>
+                            <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Products</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white hover:scale-110 inline-block transition duration-500">Supports</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div  class="text-center md:text-right mt-6 md:mt-0">
+                <ul class="flex justify-center md:justify-end gap-4">
+                    <li>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536559.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="" class="w-6 hover:scale-110 hover:opacity-75 transition duration-500">
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-gray-400 text-sm mt-5">
+                    &copy; 2025 VisitIndonesia. All Rights Reserved
+                </p>
+            </div>
+        </footer>
+
+		<script>
+			const menuToggle = document.getElementById("menu-toggle")
+			const mobileMenu = document.getElementById("mobile-menu")
+			const line1 = document.getElementById("line1")
+			const line2 = document.getElementById("line2")
+			const line3 = document.getElementById("line3")
+
+			menuToggle.addEventListener("click", () => {
+			    mobileMenu.classList.toggle("hidden")
+			    document.body.classList.toggle("overflow-hidden")
+
+
+			    line1.classList.toggle("bg-white")
+			    line1.classList.toggle("-rotate-[135deg]")
+			    line1.classList.toggle("translate-y-2")
+
+			    line2.classList.toggle("bg-white")
+			    line2.classList.toggle("opacity-0")
+
+			    line3.classList.toggle("bg-white")
+			    line3.classList.toggle("rotate-[315deg]")
+			    line3.classList.toggle("-translate-y-2")
+			})
+		</script>
+	</body>
+</html>

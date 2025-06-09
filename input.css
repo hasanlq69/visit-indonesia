@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+    --color-main-header: #fff;
+
+    --animate-translate: translate 10s linear infinite;
+    @keyframes translate {
+        0% {
+            transform: translateX(0);
+            }
+        100% {
+            transform: translateX(-50%);
+            }
+        }
+}
