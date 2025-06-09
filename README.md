@@ -1,4 +1,4 @@
-Template html Tailwind CSS 4
+Template html Tailwind 4
 
 https://hasanlq69.github.io/visit-indonesia/
 
